@@ -4,103 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>index</title>
 </head>
 <body>
     <header>
-        <a href="#">Cloud FLEX</a>
-        <button><img src="#" alt="Menu" width="30" height="30"></button>
+        <a href="#">Cloud <span>FLEX</span></a>
+        <button class="burger"><img src="/SVG/Burger.svg" alt="burger"></button>
     </header>
     <main>
         <section>
             <h1>Main page</h1>
-            <p>WHEN PERFORMANCE MATTERS</p>
-            <a href="#">Start development with us!</a>
-            <p>Scroll down</p> <hr>
-            <p><img src="#" alt="Bird"> Lorem ipsum dolor sit amet. <button>Accept</button></p>
-            <h2>How we work</h2>
-            <ul>
+            <p class="hello">WHEN PERFORMANCE MATTERS</p>
+            <a href="#" class="start">Start development with us!</a>
+            <div class="scroll"><p>Scroll down</p><hr></div>
+            <p class="bird"><img src="/PNG/Bird.png" alt="Bird"> WE USE COOKIES TO ENSURE YOUR BEST EXPERIENCE. THROUGH YOUR CONTINUED USE OF THIS SITE YOU ACCEPT THIS USE. FOR MORE INFORMATION, PLEASE SEE OUR PRIVACY POLICY. <button class="ACCEPT">Accept</button></p>
+            <h2 class="how">How we work</h2>
+            <ul class="firstul">
                 <li>
-                    <img src="#" alt="1">
-                    <h3>Development</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis.</p>
+                    <div>
+                        <img src="/SVG/Development.svg" alt="1">
+                        <h3 id="over_h3">Development</h3>
+                        <p id="over_p">Using best practices to make reliable, well-documented and easy to maintain system.</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="#" alt="2">
-                    <h3>Analysis</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis.</p>
+                    <div>
+                        <img src="/SVG/Analysis.svg" alt="2">
+                        <h3>Analysis</h3>
+                        <p>Gathering client's ideas we are happy to help with a technical vision.</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="#" alt="3">
-                    <h3>Design</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis.</p>
+                    <div>
+                        <img src="/SVG/Design.svg" alt="3">
+                        <h3>Design</h3>
+                        <p>In-depth analysis makes our solutions flexible, scalable and robust.</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="#" alt="4">
-                    <h3>Maintenance</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis.</p>
+                    <div>
+                        <img src="/SVG/Maintenance.svg" alt="4">
+                        <h3>Maintenance</h3>
+                        <p>Gathering client's ideas we are happy to help with a technical vision.</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="#" alt="5">
-                    <h3>Integration</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis.</p>
+                    <div>
+                        <img src="/SVG/Integration.svg" alt="5">
+                        <h3>Integration</h3>
+                        <p>Solutions that go with the times to improve businesses and give customers best experience.</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="#" alt="6">
-                    <h3>Testing</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis.</p>
+                    <div>
+                        <img src="/SVG/Testing.svg" alt="6">
+                        <h3>Testing</h3>
+                        <p>Providing best quality of things developed by us for customers.</p>
+                    </div>
                 </li>
             </ul>
             <hr>
         </section>
         <section>
-            <ul>
-                <li>
+            <ul class="secondul">
+                <li class="leftal">
                     <h2>High Quality</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus voluptates id tempore corporis assumenda, nobis quasi velit eius? Rerum nisi pariatur ratione labore voluptates.</p>
+                    <p>We are the leading firm by delivering quality and value to our clients. All our professionals have huge experience of creating comfortable high-quality software. We like what we do.</p>
                     <img src="#" alt="Photo">
                 </li>
-                <li>
+                <li class="rightal">
                     <h2>Always in touch</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus voluptates id tempore corporis assumenda, nobis quasi velit eius? Rerum nisi pariatur ratione labore voluptates.</p>
+                    <p>We are always ready to answer your questions. You can call us at the weekends and at night. Also you can have a meeting for personal consultation.</p>
                     <img src="#" alt="Photo1">
                 </li>
-                <li>
+                <li class="leftal">
                     <h2>Individual Approach</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus voluptates id tempore corporis assumenda, nobis quasi velit eius? Rerum nisi pariatur ratione labore voluptates.</p>
+                    <p>Our company works according to the principle of individual approach to every client. This method lets us to get success in problems of all levels.</p>
                     <img src="#" alt="Photo2">
                 </li>
             </ul>
             <hr>
         </section>
-        <section>
+        <section class="thirdul">
             <h2>Our experience</h2>
             <a href="#"><p>Serverless Live Streaming</p><img src="#" alt="Photo"></a>
             <a href="#"><p>Learn about CloudFlex team cases</p><img src="#" alt="Photo"></a>
             <a href="#"><p>Live streaming from mobile</p><img src="#" alt="Photo"></a>
         </section>
-        <section>
-            <h2>Testimonials</h2>
+        <section class="lastsect">
+            <h2 class="testimonials">Testimonials</h2>
             <img src="#" alt="Face">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sapiente atque nesciunt incidunt eligendi laudantium necessitatibus repudiandae suscipit molestiae maiores.</p>
-            <button><img src="#" alt="Left" width="30" height="30"></button>
+            <p>A very good review left by a satisfied customer. And here I haven't figured out what to write yet, so I just added this sentence.</p>
+            <button><img src="/SVG/Left.svg" alt="Left"></button>
             <label><input type="radio" id="radioButton" name="radio"></label>
             <label><input type="radio" id="radioButton2" name="radio"></label>
             <label><input type="radio" id="radioButton3" name="radio"></label>
             <label><input type="radio" id="radioButton4" name="radio"></label>
-            <button><img src="#" alt="Right" width="30" height="30"></button>
+            <label><input type="radio" id="radioButton5" name="radio"></label>
+            <label><input type="radio" id="radioButton6" name="radio"></label>
+            <button><img src="/SVG/Right.svg" alt="Right"></button>
         </section>
         <section>
-            <h2>Ready to get started? Drop us a line!</h2>
-            <form>
-                <label><input type="text">Name</label>
-                <label><input type="text">Email</label>
-                <label><input type="text">What we can do for you?</label>
-                <button>Send</button>
+            <h2 class="ready">Ready to get started? Drop us a line!</h2>
+            <form class="registration">
+                <label><input type="text" placeholder="Name"></label>
+                <label><input type="text" placeholder="Email"></label>
+                <label><input type="text" placeholder="What we can do for you?"></label>
+                <button class="send">Send</button>
             </form>
-            <a href="#"><img src="#" alt="in"></a>
-            <a href="#"><img src="#" alt="f"></a>
-            <a href="#"><img src="#" alt="inst"></a>
+            <ul class="link">
+                <li>
+                    <a href="#"><img src="/SVG/Linkedin.svg" alt="linkedin"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/SVG/Facebook.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/SVG/Inst.svg" alt="instagram"></a>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
