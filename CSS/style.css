@@ -5,15 +5,18 @@
     font-weight: 400;
     --custom-property-blue: #5081ED;
     --custom-property-blueplus: #628eef;
+    --custom-property-white: white;
+    --custom-property-black: black;
+    --custom-property-grey: gray;
 }
 
 body{
     background: var(--custom-property-blue);
-    color: white;
+    color: var(--custom-property-white);
 }
 
 a{
-    color: white;
+    color: var(--custom-property-white);
 }
 
 h1{
@@ -24,7 +27,7 @@ header{
     background: var(--custom-property-blueplus);
     display: flex;
     justify-content: space-between;
-    border-bottom: solid white 0.1rem;
+    border-bottom: solid var(--custom-property-white) 0.1rem;
 }
 
 .burger {
@@ -34,7 +37,7 @@ header{
 
 header a{
     font-size: 2.3rem;
-    border-right: solid white 0.1rem;
+    border-right: solid var(--custom-property-white) 0.1rem;
     padding-right: 5rem;
     padding: 1rem 2.9rem;
     padding-right: 5rem;
@@ -51,39 +54,39 @@ header button{
 
 .scroll{
     font-size: 1.6rem;
-    line-height: 3rem;
+    line-height: 188%;
 }
 
 .scroll hr{
     width: 7.5rem;
     height: 0.1rem;
-    background: white;
+    background: var(--custom-property-white);
     border: none;
 }
 
 .bird{
     font-size: 1rem;
-    line-height: 1.4rem;
-    color: #000000;
+    line-height: 140%;
+    color: var(--custom-property-black);
 }
 
 .accept{
     font-size: 3rem;
-    line-height: 1.4rem;
+    line-height: 47%;
     border: none;
     background: none;
 }
 
 .how{
     font-size: 4rem;
-    line-height: 3rem;
+    line-height: 75%;
 }
 
 .hello{
     font-weight: 700;
     font-size: 4.2rem;
-    color: black;
-    line-height: 4rem;
+    color: var(--custom-property-black);
+    line-height: 95%;
     text-align: left;
     padding: 12rem 2.5rem;
 }
@@ -91,7 +94,7 @@ header button{
 .start{
     padding: 1rem 2.5rem;
     font-size: 2rem;
-    background: #000000;
+    background: var(--custom-property-black);
     border-radius: 9rem;
 }
 
@@ -105,18 +108,18 @@ header button{
 
 .send{
     font-size: 26px;
-    line-height: 30px;
+    line-height: 115%;
     padding: 0.8rem 13rem;
     border: none;
     border-radius: 9rem;
-    background-color: black;
-    color: white;
+    background-color: var(--custom-property-black);
+    color: var(--custom-property-white);
 }
 
 .lastsect p{
     font-weight: 300;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 129%;
 }
 
 .lastsect button{
@@ -126,14 +129,14 @@ header button{
 
 .testimonials{
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 100%;
     font-weight: 500;
 }
 
 .ready{
     font-size: 3.5rem;
-    line-height: 4rem;
-    color: #000000;
+    line-height: 114%;
+    color: var(--custom-property-black);
 }
 
 .link{
@@ -148,19 +151,19 @@ footer{
 
 footer a{
     font-size: 2.2rem;
-    line-height: 3rem;
+    line-height: 136%;
     padding-right: 2.7rem;
 }
 
 footer p{
     font-size: 1.4rem;
-    line-height: 3rem;
+    line-height: 214%;
     font-weight: 300;
 }
 
 .secondul h2{
-    font-size: 35px;
-    line-height: 14px;
+    font-size: 3.5rem;
+    line-height: 40%;
     font-weight: 500;
 }
 
@@ -169,22 +172,16 @@ body ul{
 }
 
 .secondul p{
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 1.8rem;
+    line-height: 110%;
     font-weight: 300;
 }
 
 .firstul {
     display: grid;
-    /* grid-template-columns: repeat(3, 1.4rem);
-    grid-template-rows: repeat(2, 1.5rem); */
-    height: 100%;
-    grid-template-areas: 
-    "a b"
-    "c d"
-    "e f";
     padding: 3rem;
     gap: 1.7rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 .firstul li{
@@ -201,50 +198,46 @@ body ul{
     height: 4.3rem;
 }
 
-.firstul h3{
-    font-size: 14px;
-    line-height: 30px;
-    color: black;
+.firstul .whitediv{
+    color: var(--custom-property-white);
+}
+
+h3{
+    font-size: 1.4rem;
+    line-height: 214%;
+    color: var(--custom-property-black);
     margin: 0;
 }
 
 .firstul p{
-    font-size: 11px;
-    line-height: 18px;
-    color: black;
+    font-size: 1.1rem;
+    line-height: 164%;
+    color: var(--custom-property-black);
     margin: 0;
 }
 
 .registration{
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.8rem;
+    line-height: 167%;
     padding: 2.3rem;
 }
 
 .registration input{
     padding: 0.85rem 2.8rem;
     padding-right: 10rem;
-    border: solid gray 0.1rem;
+    border: solid var(--custom-property-grey) 0.1rem;
     border-radius: 9rem;
     margin-bottom: 2.3rem;
 }
 
-#over_h3{
-    color: white;
-}
-
-#over_p{
-    color: white;
-}
-
 .thirdul h2{
     font-weight: 500;
-    font-size: 35px;
-    line-height: 30px;
+    font-size: 3.5rem;
+    line-height: 86%;
 }
 
 .thirdul p{
     font-weight: 300;
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 2.5rem;
+    line-height: 100%;
 }
