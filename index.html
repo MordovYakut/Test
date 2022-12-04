@@ -17,12 +17,22 @@
         <button class="burger"><img src="/SVG/Burger.svg" alt="burger"></button>
     </header>
     <main>
-        <section>
+        <section class="toppad1">
             <h1>Main page</h1>
             <p class="hello">WHEN PERFORMANCE MATTERS</p>
             <a href="#" class="start">Start development with us!</a>
-            <div class="scroll"><p>Scroll down</p><hr></div>
-            <p class="bird"><img src="/PNG/Bird.png" alt="Bird"> WE USE COOKIES TO ENSURE YOUR BEST EXPERIENCE. THROUGH YOUR CONTINUED USE OF THIS SITE YOU ACCEPT THIS USE. FOR MORE INFORMATION, PLEASE SEE OUR PRIVACY POLICY. <button class="ACCEPT">Accept</button></p>
+            <div class="birdmar">
+                <div class="bird">
+                    <div class="scroll">
+                        <span>Scroll down</span>
+                        <div class="line"></div>
+                    </div>
+                    <img src="/PNG/Bird.png" alt="Bird">
+                    <p> WE USE COOKIES TO ENSURE YOUR BEST EXPERIENCE. THROUGH YOUR CONTINUED USE OF THIS SITE YOU ACCEPT THIS USE. FOR MORE INFORMATION, PLEASE SEE OUR PRIVACY POLICY.</p>
+                    <hr>
+                    <button>ACCEPT</button>
+                </div>
+            </div>
             <h2 class="how">How we work</h2>
             <ul class="firstul">
                 <li>
@@ -68,48 +78,60 @@
                     </div>
                 </li>
             </ul>
-            <hr>
+            <hr/>
         </section>
-        <section>
+        <section class="toppad2">
             <ul class="secondul">
                 <li class="leftal">
+                    <div class="table">
                     <h2>High Quality</h2>
                     <p>We are the leading firm by delivering quality and value to our clients. All our professionals have huge experience of creating comfortable high-quality software. We like what we do.</p>
-                    <img src="#" alt="Photo">
+                    <img src="/PNG/High.png" alt="Photo">
+                    </div>
                 </li>
                 <li class="rightal">
+                    <div class="table">
                     <h2>Always in touch</h2>
                     <p>We are always ready to answer your questions. You can call us at the weekends and at night. Also you can have a meeting for personal consultation.</p>
-                    <img src="#" alt="Photo1">
+                    <img src="/PNG/Always.png" alt="Photo1">
+                    </div>
                 </li>
                 <li class="leftal">
+                    <div class="table">
                     <h2>Individual Approach</h2>
                     <p>Our company works according to the principle of individual approach to every client. This method lets us to get success in problems of all levels.</p>
-                    <img src="#" alt="Photo2">
+                    <img src="/PNG/Individual.png" alt="Photo2">
+                    </div>
                 </li>
             </ul>
             <hr>
         </section>
         <section class="thirdul">
             <h2>Our experience</h2>
-            <a href="#"><p>Serverless Live Streaming</p><img src="#" alt="Photo"></a>
-            <a href="#"><p>Learn about CloudFlex team cases</p><img src="#" alt="Photo"></a>
-            <a href="#"><p>Live streaming from mobile</p><img src="#" alt="Photo"></a>
+            <div class="column"><a href="#"><p>Serverless Live Streaming</p><img src="/PNG/Serverless.png" alt="Photo"></a></div>
+            <div class="column"><a href="#"><p>Learn about CloudFlex team cases</p><img src="/PNG/Learn.png" alt="Photo"></a></div>
+            <div class="column"><a href="#"><p>Live streaming from mobile</p><img src="/PNG/Live.png" alt="Photo"></a></div>
         </section>
         <section class="lastsect">
             <h2 class="testimonials">Testimonials</h2>
-            <img src="#" alt="Face">
-            <p>A very good review left by a satisfied customer. And here I haven't figured out what to write yet, so I just added this sentence.</p>
+            <div class="testim">
+                <div class="otz">
+                <img src="/PNG/Face.png" alt="Face">
+                <p>A very good review left by a satisfied customer. And here I haven't figured out what to write yet, so I just added this sentence.</p>
+                </div>
+            </div>
+            <div class="radioflex">
             <button><img src="/SVG/Left.svg" alt="Left"></button>
-            <label><input type="radio" id="radioButton" name="radio"></label>
-            <label><input type="radio" id="radioButton2" name="radio"></label>
-            <label><input type="radio" id="radioButton3" name="radio"></label>
-            <label><input type="radio" id="radioButton4" name="radio"></label>
-            <label><input type="radio" id="radioButton5" name="radio"></label>
-            <label><input type="radio" id="radioButton6" name="radio"></label>
+            <label class="radio"><input type="radio" id="radioButton" name="radio"></label>
+            <label class="radio"><input type="radio" id="radioButton2" name="radio"></label>
+            <label class="radio"><input type="radio" id="radioButton3" name="radio"></label>
+            <label class="radio"><input type="radio" id="radioButton4" name="radio"></label>
+            <label class="radio"><input type="radio" id="radioButton5" name="radio"></label>
+            <label class="radio"><input type="radio" id="radioButton6" name="radio"></label>
             <button><img src="/SVG/Right.svg" alt="Right"></button>
+            </div>
         </section>
-        <section>
+        <section class="last">
             <h2 class="ready">Ready to get started? Drop us a line!</h2>
             <form class="registration">
                 <label><input type="text" placeholder="Name"></label>
@@ -131,7 +153,7 @@
         </section>
     </main>
     <footer>
-        <a href="#">Terms of Use</a>
+        <a href="#" class="littlepad">Terms of Use</a>
         <a href="#">Privacy Policy</a>
         <p>Ⓒ CloudFlex 2019. All Rights Reserved.</p>
     </footer>
