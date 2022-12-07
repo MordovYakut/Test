@@ -11,11 +11,7 @@
     --custom-property-last: rgba(255, 255, 255, 0.1);
 }
 
-@media screen and (min-width: 80rem) {
-    .firstul {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
+
 
 body{
     background: var(--custom-property-blue);
@@ -143,10 +139,12 @@ header button{
 
 .toppad2{
     margin-top: 10rem;
+    border-bottom: 1.5px solid var(--custom-property-white);
 }
 
 .toppad1{
     padding-top:  16rem;
+    border-bottom: 1.5px solid var(--custom-property-white);
 }
 
 .toppad1 .podoblakom{
@@ -158,6 +156,11 @@ header button{
     transform: translateY(0rem) translateX(-19rem);
 }
 
+.divhello{
+    display: flex;
+    justify-content: center;
+}
+
 .hello{
     font-weight: 700;
     font-size: 4.2rem;
@@ -166,6 +169,7 @@ header button{
     text-align: left;
     padding: 0 2.5rem 16rem 2.5rem;
     margin: 0;
+    width: 40rem;
 }
 
 .start{
@@ -179,6 +183,12 @@ header button{
     text-align: left;
 }
 
+.leftal img{
+    display: block;
+    margin-left: auto;
+    margin-right: -2rem;
+}
+
 .rightal{
     display: flex;
     justify-content: end;
@@ -186,7 +196,10 @@ header button{
 }
 
 .rightal img{
-    
+    display: block;
+    margin-right: auto;
+    margin-left: -2.8rem;
+    margin-top: -10rem;
 }
 
 .lastsect{
@@ -224,7 +237,7 @@ header button{
 .oblako2{
     position: absolute;
     right: 0;
-    top: 585rem;
+    top: 575rem;
 }
 
 .ready{
@@ -263,7 +276,7 @@ footer p{
 }
 
 .secondul{
-    margin: 2rem;
+    margin: 2rem 2rem 0 2rem;
 }
 
 .secondul h2{
@@ -284,7 +297,7 @@ body ul{
 .firstul {
     display: grid;
     padding: 3rem;
-    gap: 1.7rem;
+    gap: 3rem;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
 }
@@ -436,4 +449,23 @@ h3{
 
 .radio{
     margin: 5rem 0.5rem;
+}
+@media all and (min-width: 800px) {
+    .firstul {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 7rem;
+    }
+    .secondul{
+        margin: 2rem 7.5rem 0 7.5rem;
+    }
+}
+
+@media all and (min-width: 950px){
+    .hello{
+        font-weight: 700;
+        font-size: 12rem;
+        line-height: 100%;
+        text-align: left;
+        width: 100rem;
+    }
 }
