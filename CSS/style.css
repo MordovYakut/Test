@@ -11,6 +11,12 @@
     --custom-property-last: rgba(255, 255, 255, 0.1);
 }
 
+@media screen and (min-width: 80rem) {
+    .firstul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
 body{
     background: var(--custom-property-blue);
     color: var(--custom-property-white);
@@ -56,6 +62,7 @@ header button{
 }
 
 .bird .scroll{
+    display: block;
     position: absolute;
     transform: rotate(90deg) translateY(10rem) translateX(2rem);
     width: 17.2rem;
@@ -132,6 +139,10 @@ header button{
     color: var(--custom-property-white);
     transform: translateY(-20rem) translateX(7rem);
     z-index: 1;
+}
+
+.toppad2{
+    margin-top: 10rem;
 }
 
 .toppad1{
@@ -248,7 +259,7 @@ footer p{
 }
 
 .littlepad{
-    padding-right: 2.7rem;
+    margin-right: 2.7rem;
 }
 
 .secondul{
@@ -282,12 +293,8 @@ body ul{
     background: var(--custom-property-blueplus);
     box-shadow: 0rem 0.4rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 2rem;
     width: 15rem;
-}
-
-.firstul div{
-    padding: 1rem;
 }
 
 .firstul img{
@@ -362,7 +369,6 @@ h3{
 
 .table{
     box-sizing: border-box;
-    margin-top: 10rem;
 }
 
 .table p{
