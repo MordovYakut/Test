@@ -15,6 +15,7 @@ body{
     background: var(--custom-property-blue);
     color: var(--custom-property-white);
     overflow-x: hidden;
+    min-width: 32rem;
 }
 
 a{
@@ -93,6 +94,7 @@ header button{
     height: 16rem;
     max-width: 31.6rem;
     margin: 5rem 0 6rem 3.5rem;
+    z-index: 2;
 }
 
 .bird img{
@@ -119,16 +121,30 @@ header button{
     padding: 1rem 1rem 0 10rem;
 }
 
+.bird .z1{
+    position: relative;
+    z-index: 2;
+}
+
 .how{
+    position: absolute;
     font-size: 4rem;
+    color: var(--custom-property-white);
+    transform: translateY(-20rem) translateX(7rem);
+    z-index: 1;
 }
 
 .toppad1{
     padding-top:  16rem;
 }
 
-.toppad2{
-    padding-top: 8rem;
+.toppad1 .podoblakom{
+    position: relative;
+}
+
+.toppad1 .oblako{
+    position: absolute;
+    transform: translateY(0rem) translateX(-19rem);
 }
 
 .hello{
@@ -153,7 +169,13 @@ header button{
 }
 
 .rightal{
+    display: flex;
+    justify-content: end;
     text-align: right;
+}
+
+.rightal img{
+    
 }
 
 .lastsect{
@@ -180,6 +202,18 @@ header button{
 
 .last{
     padding-top: 11rem;
+}
+
+.oblako3{
+    position: absolute;
+    left: 0;
+    top: 525rem;
+}
+
+.oblako2{
+    position: absolute;
+    right: 0;
+    top: 585rem;
 }
 
 .ready{
@@ -236,15 +270,12 @@ body ul{
     font-weight: 300;
 }
 
-.secondul li{
-    padding-bottom: 10rem;
-}
-
 .firstul {
     display: grid;
     padding: 3rem;
     gap: 1.7rem;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
 .firstul li{
@@ -252,6 +283,7 @@ body ul{
     box-shadow: 0rem 0.4rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 2rem;
     padding: 1rem;
+    width: 15rem;
 }
 
 .firstul div{
@@ -330,10 +362,16 @@ h3{
 
 .table{
     box-sizing: border-box;
+    margin-top: 10rem;
 }
 
 .table p{
     width: 32rem;
+    margin: 2rem 0 0 0;
+}
+
+.table h2{
+    margin: 0;
 }
 
 .column{
@@ -373,7 +411,7 @@ h3{
 .testim{
     max-width: 35rem;
     text-align: center;
-    background: url(/SVG/Testimonials.svg) no-repeat;
+    background-image: url(/SVG/Testimonials.svg);
     height: 21.3rem;
     margin: 1rem auto;
 }
