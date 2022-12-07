@@ -40,7 +40,13 @@ header{
     border: none;
 }
 
-header a{
+header .dopa{
+    display: none;
+    font-size: 2rem;
+    margin: auto 9.5rem;
+}
+
+header .cloud{
     font-size: 2.3rem;
     border-right: solid var(--custom-property-white) 0.1rem;
     padding-right: 5rem;
@@ -57,16 +63,18 @@ header button{
     margin-left: auto;
 }
 
-.bird .scroll{
+.scroll{
     display: block;
     position: absolute;
-    transform: rotate(90deg) translateY(10rem) translateX(2rem);
+    left: -7rem;
+    top: 58rem;
+    transform: rotate(90deg);
     width: 17.2rem;
     display: flex;
     flex-direction: row;
 }
 
-.bird .scroll span{
+.scroll span{
     font-size: 1.8rem;
     line-height: 188%;
     color: var(--custom-property-white);
@@ -74,7 +82,7 @@ header button{
     font-weight: 400;
 }
 
-.bird .scroll .line{
+.scroll .line{
     align-items: center;
     width: 0.1rem;
     height: 7.5rem;
@@ -85,19 +93,22 @@ header button{
 }
 
 .birdmar{
-    width: 37.5rem;
+    min-width: 31.6rem;
+    max-width: 58.3rem;
+    align-items: stretch;
     margin: 0 auto;
 }
 
 .bird{
+    display: flex;
+    flex-direction: column;
     position: relative;
     color: var(--custom-property-black);
     border-radius: 2rem;
     background-color: var(--custom-property-blueplus);
-    height: 16rem;
-    max-width: 31.6rem;
-    margin: 5rem 0 6rem 3.5rem;
+    height: auto;
     z-index: 2;
+    margin: 7rem 1rem auto 5rem;
 }
 
 .bird img{
@@ -113,6 +124,7 @@ header button{
     font-weight: bold;
     border: none;
     background: none;
+    padding: 0;
 }
 
 .bird p{
@@ -121,19 +133,19 @@ header button{
     line-height: 140%;
     font-weight: bold;
     text-align: left;
-    padding: 1rem 1rem 0 10rem;
+    padding: 0rem 1rem 0.5rem 10rem;
+    margin: 1rem 0 0 0;
+    border-bottom: 1.5px solid var(--custom-property-white);
 }
 
-.bird .z1{
-    position: relative;
-    z-index: 2;
-}
 
 .how{
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: -8rem;
+    margin-bottom: 10rem;
     font-size: 4rem;
     color: var(--custom-property-white);
-    transform: translateY(-20rem) translateX(7rem);
     z-index: 1;
 }
 
@@ -147,8 +159,22 @@ header button{
     border-bottom: 1.5px solid var(--custom-property-white);
 }
 
-.toppad1 .podoblakom{
+.podoblakom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
+}
+
+.podoblakom .start{
+    display: block;
+    padding: 1rem 2.5rem;
+    margin: 0 auto;
+    min-width: 26rem;
+    max-width: 38rem;
+    font-size: 2rem;
+    background: var(--custom-property-black);
+    border-radius: 9rem;
 }
 
 .toppad1 .oblako{
@@ -170,13 +196,6 @@ header button{
     padding: 0 2.5rem 16rem 2.5rem;
     margin: 0;
     width: 40rem;
-}
-
-.start{
-    padding: 1rem 2.5rem;
-    font-size: 2rem;
-    background: var(--custom-property-black);
-    border-radius: 9rem;
 }
 
 .leftal{
@@ -229,12 +248,14 @@ header button{
 }
 
 .oblako3{
+    display: none;
     position: absolute;
     left: 0;
     top: 525rem;
 }
 
 .oblako2{
+    display: none;
     position: absolute;
     right: 0;
     top: 575rem;
@@ -364,8 +385,10 @@ h3{
     margin-bottom: 12rem;
 }
 
-.thirdul{
-    margin-top: 10rem;
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
 }
 
 .thirdul h2{
@@ -394,14 +417,34 @@ h3{
 }
 
 .column{
-    display: flex;
-    flex-direction: column;
     border-radius: 2rem;
     background-color: var(--custom-property-last);
     box-shadow: 0rem 0.4rem 2rem rgba(0, 0, 0, 0.1);
-    margin: 5.4rem auto;
+    margin: 0 auto;
     width: 32rem;
+    height: 29.5rem;
     overflow: hidden;
+}
+
+.column2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.columnTxt{
+    height: 8.1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column img{
+    display: block;
+    width: 100%;
+    height: 21.5rem;
+    height: auto;
 }
 
 .otz{
@@ -435,12 +478,6 @@ h3{
     margin: 1rem auto;
 }
 
-.column img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .radioflex{
     display: flex;
     flex-direction: row;
@@ -450,7 +487,7 @@ h3{
 .radio{
     margin: 5rem 0.5rem;
 }
-@media all and (min-width: 800px) {
+@media all and (min-width: 768px) {
     .firstul {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 7rem;
@@ -458,9 +495,12 @@ h3{
     .secondul{
         margin: 2rem 7.5rem 0 7.5rem;
     }
+    header .dopa{
+        display: flex;
+    }
 }
 
-@media all and (min-width: 950px){
+@media all and (min-width: 1024px){
     .hello{
         font-weight: 700;
         font-size: 12rem;
@@ -468,4 +508,15 @@ h3{
         text-align: left;
         width: 100rem;
     }
+    .podoblakom .start{
+        
+    }
 }
+
+@media all and (min-width: 1200px){
+    .experience{
+        flex-direction: row;
+    }
+}
+
+
