@@ -3,6 +3,7 @@
     font-family: 'Jost', sans-serif;
     text-align: center;
     font-weight: 400;
+    
     --custom-property-blue: #5081ED;
     --custom-property-blueplus: #628eef;
     --custom-property-white: white;
@@ -11,7 +12,25 @@
     --custom-property-last: rgba(255, 255, 255, 0.1);
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 body{
     background: var(--custom-property-blue);
@@ -24,15 +43,16 @@ a{
     color: var(--custom-property-white);
 }
 
-h1{
-    display: none;
+header {
+    background-color: var(--custom-property-blueplus);
+    border-bottom: solid var(--custom-property-white) 0.1rem;
 }
 
-header{
-    background: var(--custom-property-blueplus);
+.header{
+    background-color: var(--custom-property-blueplus);
     display: flex;
     justify-content: space-between;
-    border-bottom: solid var(--custom-property-white) 0.1rem;
+    border-left: solid var(--custom-property-white) 0.1rem;
 }
 
 .burger {
@@ -40,13 +60,13 @@ header{
     border: none;
 }
 
-header .dopa{
+.header .dopa{
     display: none;
     font-size: 2rem;
     margin: auto 9.5rem;
 }
 
-header .cloud{
+.header .cloud{
     font-size: 2.3rem;
     border-right: solid var(--custom-property-white) 0.1rem;
     padding-right: 5rem;
@@ -54,11 +74,11 @@ header .cloud{
     padding-right: 5rem;
 }
 
-header span{
+.header span{
     font-weight: bold;
 }   
 
-header button{
+.header button{
     display: block;
     margin-left: auto;
 }
@@ -276,9 +296,15 @@ header button{
 
 footer{
     background-color: var(--custom-property-blueplus);
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--custom-property-blueplus);
     width: 100%;
     padding: 2.5rem 2.9rem;
-    text-align: left;
+    justify-content: space-between;
 }
 
 footer a{
@@ -292,8 +318,22 @@ footer p{
     font-weight: 300;
 }
 
+footer .fnav{
+    display: flex;
+}
+
+footer .fnav1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+footer .link2 .link2ul{
+    display: none;
+}
+
 .littlepad{
-    margin-right: 2.7rem;
+    margin-right: 4rem;
 }
 
 .secondul{
@@ -487,6 +527,19 @@ h3{
 .radio{
     margin: 5rem 0.5rem;
 }
+
+@media all and (min-width: 590px){
+    footer .link2 .link2ul{
+        display: flex;
+        gap: 4em;
+        margin: 2rem 2rem;
+        text-align: right;
+    }
+    .link{
+        display: none;
+    }
+}
+
 @media all and (min-width: 768px) {
     .firstul {
         grid-template-columns: 1fr 1fr 1fr;
@@ -495,7 +548,7 @@ h3{
     .secondul{
         margin: 2rem 7.5rem 0 7.5rem;
     }
-    header .dopa{
+    .header .dopa{
         display: flex;
     }
 }
@@ -509,7 +562,7 @@ h3{
         width: 100rem;
     }
     .podoblakom .start{
-        
+    
     }
 }
 
@@ -518,5 +571,3 @@ h3{
         flex-direction: row;
     }
 }
-
-
