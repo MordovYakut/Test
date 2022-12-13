@@ -601,6 +601,7 @@ h3{
 @media all and (min-width: 1440px){
     .table{
         flex-direction: row;
+        justify-content: center;
     }
     .table .fpictures{
         display: none;
@@ -609,9 +610,12 @@ h3{
         display: initial;
     }
     .table .pict-ml{
-        margin-left: -5rem;
+        margin-left: -20rem;
     }
     .table .pict-mr{
-        margin-right: -5rem;
+        margin-right: -20rem;
+    }
+    .table .pictml{
+        margin-left: 10rem;
     }
 }
