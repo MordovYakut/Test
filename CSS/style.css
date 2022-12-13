@@ -229,13 +229,19 @@ header {
 }
 
 .rightal{
-    display: flex;
-    justify-content: end;
     text-align: right;
+    width: 100%;
+}
+
+.rightal .table p{
+    display: block;
+    margin-right: 0rem;
+    margin-left: auto;
 }
 
 .rightal img{
     display: block;
+    justify-content: left;
     margin-right: auto;
     margin-left: -2.8rem;
     margin-top: -10rem;
@@ -444,7 +450,12 @@ h3{
 }
 
 .table{
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.table .spictures{
+    display: none;
 }
 
 .table p{
@@ -545,11 +556,17 @@ h3{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 7rem;
     }
-    .secondul{
-        margin: 2rem 7.5rem 0 7.5rem;
-    }
     .header .dopa{
         display: flex;
+    }
+    .table p{
+        width: 47rem;
+    }
+    .tabler{
+        margin: 2rem 4rem 0 4rem;
+    }
+    .tablel{
+        margin: 2rem 4rem 0 4rem;
     }
 }
 
@@ -561,13 +578,34 @@ h3{
         text-align: left;
         width: 100rem;
     }
-    .podoblakom .start{
-    
+    .tabler{
+        margin: 2rem 7.5rem 0 7.5rem;
+    }
+    .tablel{
+        margin: 2rem 7.5rem 0 7.5rem;
+    }
+    .scroll{
+        top: 80rem;
     }
 }
 
 @media all and (min-width: 1200px){
     .experience{
         flex-direction: row;
+    }
+    .table p{
+        width: 56rem;
+    }
+}
+
+@media all and (min-width: 1440px){
+    .table{
+        flex-direction: row;
+    }
+    .table .fpictures{
+        display: none;
+    }
+    .table .spictures{
+        display: initial;
     }
 }
