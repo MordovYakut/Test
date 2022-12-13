@@ -87,7 +87,7 @@ header {
     display: block;
     position: absolute;
     left: -7rem;
-    top: 58rem;
+    top: 52rem;
     transform: rotate(90deg);
     width: 17.2rem;
     display: flex;
@@ -186,6 +186,18 @@ header {
     position: relative;
 }
 
+.dstart{
+    display: none;
+    position: relative;
+    padding: 2.5rem 3.3rem;
+    font-size: 3rem;
+    background: var(--custom-property-black);
+    border-radius: 9rem;
+    font-weight: normal;
+    top: -3rem;
+    left: 2rem;
+}
+
 .podoblakom .start{
     display: block;
     padding: 1rem 2.5rem;
@@ -213,7 +225,7 @@ header {
     color: var(--custom-property-black);
     line-height: 95%;
     text-align: left;
-    padding: 0 2.5rem 16rem 2.5rem;
+    padding: 0 2.5rem 12rem 2.5rem;
     margin: 0;
     width: 40rem;
 }
@@ -577,6 +589,13 @@ h3{
         line-height: 100%;
         text-align: left;
         width: 100rem;
+        padding-bottom: 5rem;
+    }
+    .podoblakom .start{
+        display: none;
+    }
+    .dstart{
+        display: initial;
     }
     .tabler{
         margin: 2rem 7.5rem 0 7.5rem;
@@ -585,7 +604,7 @@ h3{
         margin: 2rem 7.5rem 0 7.5rem;
     }
     .scroll{
-        top: 80rem;
+        top: 67rem;
     }
 }
 
