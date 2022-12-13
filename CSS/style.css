@@ -53,6 +53,8 @@ header {
     display: flex;
     justify-content: space-between;
     border-left: solid var(--custom-property-white) 0.1rem;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .burger {
