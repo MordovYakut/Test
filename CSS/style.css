@@ -608,4 +608,10 @@ h3{
     .table .spictures{
         display: initial;
     }
+    .pict-ml{
+        margin-left: -5rem;
+    }
+    .pict-mr{
+        margin-right: -5rem;
+    }
 }
