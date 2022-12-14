@@ -127,10 +127,11 @@ header {
     position: relative;
     color: var(--custom-property-black);
     border-radius: 2rem;
-    background-color: var(--custom-property-blue);
+    background-color: var(--custom-property-blueplus);
     height: auto;
     z-index: 2;
     margin: 7rem 1rem auto 5rem;
+    box-shadow: 0rem 0.4rem 2rem rgba(0, 0, 0, 0.6);
 }
 
 .bird img{
@@ -294,7 +295,7 @@ header {
 .oblako3{
     position: absolute;
     left: 0;
-    top: 488rem;
+    top: 485rem;
 }
 
 .oblako3n{
@@ -307,7 +308,7 @@ header {
 .oblako2{
     position: absolute;
     right: 0;
-    top: 540rem;
+    top: 537em;
 }
 
 .oblako2n{
@@ -608,7 +609,7 @@ h3{
         top: 520rem;
     }
     .oblako3{
-        top: 470rem;
+        top: 465rem;
     }
 }
 
@@ -640,16 +641,10 @@ h3{
         background-size: 110rem;
     }
     .oblako2{
-        display: none;
+        top: 535rem;
     }
     .oblako3{
-        display: none;
-    }
-    .oblako2n{
-        display: initial;
-    }
-    .oblako3n{
-        display: initial;
+        top: 480rem;
     }
 }
 
@@ -659,6 +654,20 @@ h3{
     }
     .table p{
         width: 56rem;
+    }
+    .oblako2{
+        display: none;
+    }
+    .oblako3{
+        display: none;
+    }
+    .oblako2n{
+        display: initial;
+        top: 430rem;
+    }
+    .oblako3n{
+        display: initial;
+        top: 400rem;
     }
 }
 
