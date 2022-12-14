@@ -127,7 +127,7 @@ header {
     position: relative;
     color: var(--custom-property-black);
     border-radius: 2rem;
-    background-color: var(--custom-property-blueplus);
+    background-color: var(--custom-property-blue);
     height: auto;
     z-index: 2;
     margin: 7rem 1rem auto 5rem;
@@ -177,7 +177,11 @@ header {
 }
 
 .toppad1{
-    padding-top:  16rem;
+    background-image: url('/PNG/Oblako.png') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 10rem;
+    padding-top: 16rem;
     border-bottom: 1.5px solid var(--custom-property-white);
 }
 
@@ -288,20 +292,35 @@ header {
 }
 
 .oblako3{
+    position: absolute;
+    left: 0;
+    top: 488rem;
+}
+
+.oblako3n{
     display: none;
     position: absolute;
     left: 0;
-    top: 525rem;
+    top: 478rem;
 }
 
 .oblako2{
+    position: absolute;
+    right: 0;
+    top: 540rem;
+}
+
+.oblako2n{
     display: none;
     position: absolute;
     right: 0;
-    top: 575rem;
+    top: 510rem;
 }
 
 .ready{
+    margin: 0 auto;
+    padding-left: 0.75rem;
+    width: 36rem;
     font-size: 3.5rem;
     line-height: 114%;
     color: var(--custom-property-black);
@@ -582,6 +601,15 @@ h3{
     .tablel{
         margin: 2rem 4rem 0 4rem;
     }
+    .toppad1{
+        background-position: center 0;
+    }
+    .oblako2{
+        top: 520rem;
+    }
+    .oblako3{
+        top: 470rem;
+    }
 }
 
 @media all and (min-width: 1024px){
@@ -607,6 +635,21 @@ h3{
     }
     .scroll{
         top: 67rem;
+    }
+    .toppad1{
+        background-size: 110rem;
+    }
+    .oblako2{
+        display: none;
+    }
+    .oblako3{
+        display: none;
+    }
+    .oblako2n{
+        display: initial;
+    }
+    .oblako3n{
+        display: initial;
     }
 }
 
@@ -634,7 +677,7 @@ h3{
         margin-left: -20rem;
     }
     .table .pict-mr{
-        margin-right: -20rem;
+        margin-right: -12.5rem;
     }
     .table .pictml{
         margin-left: 10rem;
