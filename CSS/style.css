@@ -10,6 +10,7 @@
     --custom-property-black: black;
     --custom-property-grey: gray;
     --custom-property-last: rgba(255, 255, 255, 0.1);
+    --custom-property-selection: rgb(54, 6, 247);
 }
 
 .sr-only {
@@ -60,6 +61,7 @@ header {
 .burger {
     background: var(--custom-property-blueplus);
     border: none;
+    margin-right: 2.9rem;
 }
 
 .header .dopa{
@@ -148,6 +150,8 @@ header {
     border: none;
     background: none;
     padding: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 .bird p{
@@ -588,6 +592,8 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 7.5rem;
+    align-items: center;
 }
 
 .radio{
@@ -743,4 +749,55 @@ body > footer {
     width: 2rem;
     height: 2rem;
     margin: 0 5rem 0 2rem;
+}
+
+.buthov:hover{
+    box-shadow: inset 0 0 15px 0.5px var(--custom-property-white);
+    transition: box-shadow 0.3s;
+}
+
+.buthov:active{
+    transform: scale(90%);
+    transition: transform 0.2s;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.radioflex button{
+    border-radius: 50%;
+}
+
+.radioflex img:hover{
+    transform: scale(125%);
+    transition: transform 0.5s;
+}
+
+.radioflex img:active{
+    transform: scale(100%);
+    transition: transform 0.2s;
+}
+
+footer img:hover{
+    transform: scale(120%);
+    box-shadow: 0 0 20px 0.2px var(--custom-property-black);
+    transition: box-shadow 0.7s, transform 0.5s;
+}
+
+.firstulhov:hover{
+    transform: scale(110%);
+    transition: transform 0.5s;
+}
+
+::selection{
+    background-color: var(--custom-property-black);
+    color: var(--custom-property-white);
+    text-shadow:
+    1px 0 1px var(--custom-property-blue),
+    0 1px 1px var(--custom-property-blue),
+    2px 1px 1px var(--custom-property-blue),
+    1px 2px 1px var(--custom-property-blue),
+    3px 2px 1px var(--custom-property-blue),
+    2px 3px 1px var(--custom-property-blue);
 }
