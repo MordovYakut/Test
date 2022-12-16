@@ -25,19 +25,19 @@
             <h1 class="sr-only">Main page</h1>
             <form class="registration" name="contact" method="POST" data-netlify="true">
                 <h2 class="formh2">User data</h2>
-                <label>Name:<input type="text" placeholder="Your name" required></label>
-                <label>Surname:<input type="text" placeholder="Your surname"></label>
-                <label>Date or birth:<input type="date" required></label>
+                <label>Name:<input type="text" placeholder="Your name" name="Name" required></label>
+                <label>Surname:<input type="text" placeholder="Your surname" name="Surname"></label>
+                <label>Date or birth:<input type="date" name="Birthday" required></label>
                 <p>Gender:</p>
                 <div class="gender">
-                    <label>Man:<input type="radio" id="genderm" name="gender"></label>
-                    <label>Woman:<input type="radio" id="genderw" name="gender"></label>
+                    <label>Man:<input type="radio" id="genderm" name="Gender"></label>
+                    <label>Woman:<input type="radio" id="genderw" name="Gender"></label>
                 </div>
-                <label>Password:<input minlength="8" type="password" placeholder="Password" required></label>
+                <label>Password:<input minlength="8" type="password" placeholder="Password" name="Password" required></label>
                 <h2 class="formh2">Contact information</h2>
-                <label>Email:<input type="email" placeholder="email@address.com" required></label>
-                <label>Phone number:<input type="tel" placeholder="+7 (9XX) XXX-XXXX" required></label>
-                <label>Сonvenient interval for communication:<input type="tel" placeholder="Morning, day, evening, night"></label>
+                <label>Email:<input type="email" placeholder="email@address.com" name="Email" required></label>
+                <label>Phone number:<input type="tel" placeholder="+7 (9XX) XXX-XXXX" name="Number" required></label>
+                <label>Сonvenient interval for communication:<input type="text" placeholder="Morning, day, evening, night" name="Time"></label>
                 <button class="send" type="submit">Send</button>
                 <button class="send" type="reset">Remove form</button>
             </form>
