@@ -24,14 +24,15 @@
         <section>
             <h1 class="sr-only">Main page</h1>
             <form class="registration" name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
                 <h2 class="formh2">User data</h2>
                 <label>Name:<input type="text" placeholder="Your name" name="Name" required></label>
                 <label>Surname:<input type="text" placeholder="Your surname" name="Surname"></label>
                 <label>Date or birth:<input type="date" name="Birthday" required></label>
                 <p>Gender:</p>
                 <div class="gender">
-                    <label>Man:<input type="radio" id="genderm" name="Gender"></label>
-                    <label>Woman:<input type="radio" id="genderw" name="Gender"></label>
+                    <label>Man:<input type="radio" name="Gender" checked></label>
+                    <label>Woman:<input type="radio" name="Gender" required></label>
                 </div>
                 <label>Password:<input minlength="8" type="password" placeholder="Password" name="Password" required></label>
                 <h2 class="formh2">Contact information</h2>
