@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>form</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+        <a href="index.html" class="cloud">CLOUD <span>FLEX</span></a>
+        <a href="#" class="dopa">about us</a>
+        <a href="#" class="dopa">contact</a>
+        <button class="burger"><img src="/SVG/Burger.svg" alt="burger"></button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1 class="sr-only">Main page</h1>
+            <form class="registration" name="contact" method="POST" data-netlify="true">
+                <h2 class="formh2">User data</h2>
+                <label>Name:<input type="text" placeholder="Your name" required></label>
+                <label>Surname:<input type="text" placeholder="Your surname"></label>
+                <label>Date or birth:<input type="date" required></label>
+                <p>Gender:</p>
+                <div class="gender">
+                    <label>Man:<input type="radio" id="genderm" name="gender"></label>
+                    <label>Woman:<input type="radio" id="genderw" name="gender"></label>
+                </div>
+                <label>Password:<input minlength="8" type="password" placeholder="Password" required></label>
+                <h2 class="formh2">Contact information</h2>
+                <label>Email:<input type="email" placeholder="email@address.com" required></label>
+                <label>Phone number:<input type="tel" placeholder="+7 (9XX) XXX-XXXX" required></label>
+                <label>Сonvenient interval for communication:<input type="tel" placeholder="Morning, day, evening, night"></label>
+                <button class="send" type="submit">Send</button>
+                <button class="send" type="reset">Remove form</button>
+            </form>
+            <ul class="formlink">
+                <li>
+                    <a href="#"><img src="/SVG/Linkedin.svg" alt="linkedin"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/SVG/Facebook.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/SVG/Inst.svg" alt="instagram"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper footer">
+            <div class="fnav1">
+                <div class="fnav">
+                    <a href="#" class="littlepad">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <p>Ⓒ CloudFlex 2019. All Rights Reserved.</p>
+                <div class="qnav">
+                    <a href="mailto:">cloudflex@gmail.com</a>
+                    <a href="tel:">+1 (520) 666-1331</a>
+                </div>
+            </div>
+            <div class="link2">
+            <ul class="link2ul">
+                <li>
+                    <a href="#"><img src="/SVG/Linkedin.svg" alt="linkedin"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/SVG/Facebook.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/SVG/Inst.svg" alt="instagram"></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
