@@ -671,7 +671,7 @@ h3{
     }
 }
 
-@media all and (min-width: 1440px){
+@media all and (min-width: 1600px){
     .table{
         flex-direction: row;
         justify-content: center;
@@ -682,13 +682,10 @@ h3{
     .table .spictures{
         display: initial;
     }
-    .table .pict-ml{
-        margin-left: -20rem;
+    .oblako2n{
+        top: 510rem;
     }
-    .table .pict-mr{
-        margin-right: -12.5rem;
-    }
-    .table .pictml{
-        margin-left: 10rem;
+    .oblako3n{
+        top: 480rem;
     }
 }
