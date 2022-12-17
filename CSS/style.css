@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
 :root{
     font-size: 62.5%;
     font-family: 'Jost', sans-serif;
@@ -559,7 +560,6 @@ h3{
 
 .otz{
     width: 28rem;
-    padding-top: rem;
     margin: 0 auto;
     text-align: left;
     overflow: hidden;
@@ -757,7 +757,7 @@ body > footer {
 }
 
 .cloud:active{
-    transform: scale(90%);
+    transform: scale(0.9);
     transition: transform 0.3s;
 }
 
@@ -767,7 +767,7 @@ body > footer {
 }
 
 .buthov:active{
-    transform: scale(95%);
+    transform: scale(0.95);
     transition: transform 0.2s;
 }
 
@@ -776,7 +776,7 @@ body > footer {
 }
 
 .dopa:active{
-    transform: scale(95%);
+    transform: scale(0.95);
     transition: transform 0.2s;
 }
 
@@ -785,19 +785,19 @@ footer a:hover{
 }
 
 footer a:hover{
-    transform: scale(95%);
+    transform: scale(0.95);
     transition: transform 0.2s;
 }
 
 .column:hover{
     box-shadow: 0 0 15px 1px var(--custom-property-white);
-    transform: scale(105%);
+    transform: scale(1.05);
     transition: transform 0.2s, box-shadow 0.5s;
 }
 
 .column:active{
     box-shadow: 0 0 15px 1px var(--custom-property-black);
-    transform: scale(95%);
+    transform: scale(0.95);
     transition: transform 0.2s, box-shadow 0.5s;
 }
 
@@ -826,23 +826,23 @@ footer a:hover{
 }
 
 .radioflex img:hover{
-    transform: scale(125%);
+    transform: scale(1.25);
     transition: transform 0.5s;
 }
 
 .radioflex img:active{
-    transform: scale(100%);
+    transform: scale(1);
     transition: transform 0.2s;
 }
 
 footer img:hover{
-    transform: scale(120%);
+    transform: scale(1.1);
     box-shadow: 0 0 20px 0.2px var(--custom-property-black);
     transition: box-shadow 0.7s, transform 0.5s;
 }
 
 .firstulhov:hover{
-    transform: scale(110%);
+    transform: scale(1.1);
     transition: transform 0.5s;
 }
 
